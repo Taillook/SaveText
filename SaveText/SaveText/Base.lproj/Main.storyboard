@@ -37,7 +37,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SaveText" id="gmV-7S-6TV"/>
+                    <navigationItem key="navigationItem" title="SaveText" id="hR7-Jz-VJG">
+                        <barButtonItem key="leftBarButtonItem" title="Setting" id="z21-73-Ty8">
+                            <connections>
+                                <segue destination="nef-sp-8av" kind="presentation" id="yEj-g7-ZFC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textView" destination="WHT-wV-8yd" id="asq-a9-RAW"/>
                     </connections>
@@ -47,6 +53,39 @@
             <point key="canvasLocation" x="1172" y="134"/>
         </scene>
         <!--Navigation Controller-->
+        <scene sceneID="uWO-eM-Osh">
+            <objects>
+                <navigationController id="nef-sp-8av" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ImG-p8-oi0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.90196078430000004" green="0.8862745098" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xdo-v4-XC5" kind="relationship" relationship="rootViewController" id="fEH-no-dhv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cr9-Qz-pCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="-562"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="pWb-57-yB5">
+            <objects>
+                <viewController id="xdo-v4-XC5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dU-nl-B9K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92156862750000001" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5T6-Yd-vIi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Setting" id="B0m-mX-qxO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byq-1I-XmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="-563"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="VWa-iT-T9U">
             <objects>
                 <navigationController id="4fG-FC-im9" sceneMemberID="viewController">
@@ -54,6 +93,7 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.90196078431372551" green="0.88627450980392153" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.29411764709999999" green="0.27058823529999998" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.90196078431372551" green="0.88627450980392153" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.29411764705882354" green="0.27058823529411763" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
