@@ -12,8 +12,17 @@ import RxCocoa
 
 class EditViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
+    let userDefaults = UserDefaults.standard
     var disposeBag = DisposeBag()
     let viewModel = EditViewModel()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if let savedFont = userDefaults.font(forKey: "font") {
+            textView.font = savedFont
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
