@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		585BA312AD15A9E734EA5512 /* Pods_SaveText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBC80DB241E7F93A41AFB2A /* Pods_SaveText.framework */; };
 		C95095B41FB429F90026344E /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95095B31FB429F90026344E /* EditViewModel.swift */; };
+		C95095B71FB463460026344E /* UserDefaults+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95095B61FB463460026344E /* UserDefaults+UIFont.swift */; };
+		C95095BA1FB4857E0026344E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95095B91FB4857E0026344E /* SettingViewController.swift */; };
+		C95095BC1FB49CE60026344E /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95095BB1FB49CE60026344E /* SettingViewModel.swift */; };
 		C9AE497D1FB33CFD008540FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE497C1FB33CFD008540FA /* AppDelegate.swift */; };
 		C9AE497F1FB33CFD008540FA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE497E1FB33CFD008540FA /* EditViewController.swift */; };
 		C9AE49821FB33CFD008540FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AE49801FB33CFD008540FA /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 		782C871E07E362E2F71D592D /* Pods-SaveText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaveText/Pods-SaveText.debug.xcconfig"; sourceTree = "<group>"; };
 		AEBC80DB241E7F93A41AFB2A /* Pods_SaveText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95095B31FB429F90026344E /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
+		C95095B61FB463460026344E /* UserDefaults+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+UIFont.swift"; sourceTree = "<group>"; };
+		C95095B91FB4857E0026344E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C95095BB1FB49CE60026344E /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		C9AE49791FB33CFD008540FA /* SaveText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AE497C1FB33CFD008540FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9AE497E1FB33CFD008540FA /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +74,23 @@
 			path = Edit;
 			sourceTree = "<group>";
 		};
+		C95095B51FB463140026344E /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C95095B61FB463460026344E /* UserDefaults+UIFont.swift */,
+			);
+			path = extentions;
+			sourceTree = "<group>";
+		};
+		C95095B81FB485630026344E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C95095B91FB4857E0026344E /* SettingViewController.swift */,
+				C95095BB1FB49CE60026344E /* SettingViewModel.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		C9AE49701FB33CFD008540FA = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +112,8 @@
 		C9AE497B1FB33CFD008540FA /* SaveText */ = {
 			isa = PBXGroup;
 			children = (
+				C95095B81FB485630026344E /* Setting */,
+				C95095B51FB463140026344E /* extentions */,
 				C9AE497C1FB33CFD008540FA /* AppDelegate.swift */,
 				C95095B21FB408500026344E /* Edit */,
 				C9AE49801FB33CFD008540FA /* Main.storyboard */,
@@ -230,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95095BA1FB4857E0026344E /* SettingViewController.swift in Sources */,
+				C95095BC1FB49CE60026344E /* SettingViewModel.swift in Sources */,
 				C95095B41FB429F90026344E /* EditViewModel.swift in Sources */,
 				C9AE497F1FB33CFD008540FA /* EditViewController.swift in Sources */,
 				C9AE497D1FB33CFD008540FA /* AppDelegate.swift in Sources */,
+				C95095B71FB463460026344E /* UserDefaults+UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
